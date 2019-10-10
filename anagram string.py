@@ -1,5 +1,4 @@
-s1=raw_input("Enter first string:")
-s2=raw_input("Enter second string:")
+s1,s2=raw_input("Enter first string:"),raw_input("Enter second string:")
 if(sorted(s1)==sorted(s2)):
       print("The strings are anagrams.")
 else:
