@@ -1,24 +1,15 @@
 
-def add(x, y):
-   return x + y
-
-
-def subtract(x, y):
-   return x - y
-
-
-print("Enter choice.\n 1.Add\n 2.Subtract")
-choice = input("Enter your choice:")
-
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
-
-if choice == 1:
-   print(num1,"+",num2,"=", add(num1,num2))
-
-elif choice == 2:
-   print(num1,"-",num2,"=", subtract(num1,num2))
+def arit(num1, num2,choice):
+   if choice==1 :
+      return num1+num2
+   else :
+      return num1-num2
    
+num1,num2,choice= int(input("Enter first number: ")),int(input("Enter second number: ")),int(input("Enter choice.\n 1.Add\n 2.Subtract-----\nEnter your choice:"))
+if choice == 1:
+   print(num1,"+",num2,"=", arit(num1,num2,choice))
+elif choice == 2:
+   print(num1,"-",num2,"=", arit(num1,num2,choice))
 else:
    print("Invalid input")
 
